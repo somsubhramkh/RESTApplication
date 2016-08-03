@@ -20,6 +20,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import backend.model.Blog;
+import backend.model.Forum;
 import backend.model.User;
 
 @Configuration
@@ -69,6 +71,8 @@ public class WebApplicationConfig extends WebMvcConfigurerAdapter{
     	LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
     	sessionBuilder.addProperties(getHibernateProperties());
     	sessionBuilder.addAnnotatedClasses(User.class);
+    	sessionBuilder.addAnnotatedClass(Blog.class);
+    	sessionBuilder.addAnnotatedClass(Forum.class);
     	return sessionBuilder.buildSessionFactory();
     }
     
