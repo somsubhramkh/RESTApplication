@@ -1,0 +1,15 @@
+backend\model\User.class
+backend\model\Blog.class
+backend\model\Forum.class
+backend\service\BlogService.class
+backend\config\WebApplicationConfig.class
+backend\service\ForumService.class
+backend\dao\ForumDAO.class
+backend\service\UserService.class
+backend\controller\UserController.class
+backend\controller\BlogController.class
+backend\controller\ForumController.class
+backend\dao\UserDAO.class
+backend\controller\IndexController.class
+backend\config\AppInitializer.class
+backend\dao\BlogDAO.class
