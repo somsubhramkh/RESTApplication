@@ -17,6 +17,7 @@ angular.module('myApp').controller('BlogController', ['$scope', 'BlogService', f
         BlogService.fetchAllBlogs()
             .then(
             function(d) {
+            	alert("inside fetchallblogs method");
                 self.blogs = d;
             },
             function(errResponse){
